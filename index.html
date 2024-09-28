@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/public/assets/images/favicon-32x32.png"
+    />
+    <link href="/public/assets/css/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/public/assets/css/contact.css" />
+
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
+  </head>
+  <body class="font-display grid h-screen w-screen items-center justify-center">
+    <main class="sm:grid-col-2 h-full w-full sm:grid sm:grid-flow-col">
+      <div
+        class="sm:grid sm:place-content-between sm:bg-[url('/public/assets/images/bg-pattern-desktop.svg')] sm:bg-cover sm:px-[20%] sm:pb-20 sm:pt-20"
+      >
+        <div class="p-8 sm:p-0">
+          <img
+            src="/public/assets/images/logo.svg"
+            alt="base apparel logo"
+            class="w-28 sm:w-44"
+          />
+        </div>
+        <img
+          src="/public/assets/images/hero-mobile.jpg"
+          alt="hero photo"
+          class="h-full w-full object-contain sm:hidden sm:object-contain"
+        />
+
+        <div
+          class="grid w-fit place-content-center place-items-center gap-5 px-8 py-16 text-center sm:col-span-1 sm:place-items-start sm:px-0 sm:text-left"
+        >
+          <h1
+            class="text-clrRed-darkGrayish text-4xl font-bold uppercase tracking-[.5rem] sm:max-w-[5ch] sm:text-6xl sm:leading-tight"
+          >
+            <span class="text-clrRed-desaturated font-light">We're</span> coming
+            soon
+          </h1>
+          <p class="text-clrRed-desaturated text-sm sm:text-lg">
+            Hello fellow shoppers! We're currently building our new fashion
+            store. Add your email below to stay up-to-date with announcements
+            and our launch deals.
+          </p>
+            <form action="#" class="relative w-full overflow-visible">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email Address"
+                autocomplete="off"
+                class="border-clrRed-desaturated placeholder-clrRed-desaturated w-full rounded-full border px-5 py-3 text-sm outline-none"
+              />
+              <div class="absolute right-0 top-1/2 flex -translate-y-1/2 gap-4 max-h-full">
+                <img
+                  src="/public/assets/images/icon-error.svg"
+                  alt="error icon"
+                  class="w-6 object-contain hidden outline-none max-h-full"
+                  id="errorIcon"
+                />
+                <button
+                  id="submit"
+                  class="bg-clrRed-soft bg-image-gradient-135deg from-clrGradient2-from to-clrGradient2-to shadow-clrGradient2-from max-h-full rounded-full px-6 py-3 text-sm shadow-xl hover:opacity-50"
+                >
+                  <img
+                    src="/public/assets/images/icon-arrow.svg"
+                    alt="arrow"
+                    class="m-auto"
+                  />
+                </button>
+              </div>
+              <div id="validationFeedback" class="text-clrRed-soft px-5 py-2 absolute bottom-0 translate-y-full"></div>
+            </form>
+        </div>
+      </div>
+
+      <img
+        src="/public/assets/images/hero-desktop.jpg"
+        alt="hero photo"
+        class="hidden h-full w-full object-cover sm:block"
+      />
+    </main>
+    <script
+      src="/public/assets/vendors/validator.min.js"
+      type="text/javascript"
+    ></script>
+    <script src="/public/assets/js/main.js" type="text/javascript"></script>
+  </body>
+</html>
